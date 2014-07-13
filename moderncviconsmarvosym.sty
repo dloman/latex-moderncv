@@ -1,0 +1,154 @@
+%% start of file `moderncviconsmarvosym.sty'.
+%% Copyright 2013-2013 Xavier Danaux (xdanaux@gmail.com).
+%
+% This work may be distributed and/or modified under the
+% conditions of the LaTeX Project Public License version 1.3c,
+% available at http://www.latex-project.org/lppl/.
+
+
+%-------------------------------------------------------------------------------
+%                identification
+%-------------------------------------------------------------------------------
+\NeedsTeXFormat{LaTeX2e}
+\ProvidesPackage{moderncviconsmarvosym}[2013/04/29 v1.5.1 modern curriculum vitae and letter icons: marvosym]
+
+
+%-------------------------------------------------------------------------------
+%                required packages
+%-------------------------------------------------------------------------------
+% MarVoSym font
+%\RequirePackage{marvosym}
+\newcommand*{\marvosymbol}[1]{}
+%\ifxetexorluatex
+%  \renewcommand*{\marvosymbol}[1]{{\fontspec{MarVoSym}\char#1}}
+%\else
+  \renewcommand*{\marvosymbol}[1]{{\fontfamily{mvs}\fontencoding{U}\fontseries{m}\fontshape{n}\selectfont\char#1}}
+%\fi
+
+% tikz drawings
+\RequirePackage{tikz}
+
+
+%-------------------------------------------------------------------------------
+%                symbols definition
+%-------------------------------------------------------------------------------
+\renewcommand*{\labelitemi}          {\strut\textcolor{color1}{\marvosymbol{123}}}            % equivalent to \Neutral from marvosym package; alternative: \fontencoding{U}\fontfamily{ding}\selectfont\tiny\symbol{'102}
+%\renewcommand*{\labelitemii}         {\strut\textcolor{color1}{\large\bfseries-}}            % no change from default in moderncv.cls
+%\renewcommand*{\labelitemiii}        {\strut\textcolor{color1}{\rmfamily\textperiodcentered}}% no change from default in moderncv.cls
+%\renewcommand*{\labelitemiv}         {\labelitemiii}                                         % no change from default in moderncv.cls
+
+\renewcommand*{\addresssymbol}       {}
+\renewcommand*{\mobilephonesymbol}   {\marvosymbol{72}~}
+\renewcommand*{\fixedphonesymbol}    {\marvosymbol{84}~}
+\renewcommand*{\faxphonesymbol}      {\marvosymbol{117}~}
+\renewcommand*{\emailsymbol}         {\marvosymbol{66}~}
+\renewcommand*{\homepagesymbol}      {{\Large\marvosymbol{205}}~}
+\renewcommand*{\linkedinsocialsymbol}{%
+  \protect\raisebox{-0.165em}{%
+    \protect\begin{tikzpicture}[x=0.08em, y=0.08em, xscale=0.25, yscale=-0.25, inner sep=0pt, outer sep=0pt]
+      \protect\begin{scope}[cm={{0.60,0.0,0.0,0.60,(346.39,123.07)}}]
+        \protect\path[fill=color2]
+          (381,202) -- (434,202) .. controls (439,202) and (442,205) ..
+          (442,210) -- (442,264) .. controls (442,268) and (439,272) ..
+          (434,272) -- (381,272) .. controls (376,272) and (372,268) ..
+          (372,264) -- (372,210) .. controls (372,205) and (376,202) ..
+          (381,202) -- cycle;
+        \protect\begin{scope}[xscale=0.98, yscale=1.02, fill=white]
+          \protect\path[fill=white]
+            (403,253) -- (403,224) -- (394,224) -- (394,253) --
+            cycle(398,211) .. controls (397,211) and (395,212) ..
+            (395,213) .. controls (394,213) and (393,215) ..
+            (393,216) .. controls (393,217) and (394,218) ..
+            (395,219) .. controls (395,220) and (397,220) ..
+            (398,220) .. controls (400,220) and (401,220) ..
+            (402,219) .. controls (402,218) and (403,217) ..
+            (403,216) .. controls (403,215) and (402,213) ..
+            (402,213) .. controls (401,212) and (400,211) ..
+            (398,211) -- cycle;
+          \protect\path[fill=white]
+            (410,253) -- (419,253) --
+            (419,236) .. controls (419,236) and (419,235) ..
+            (419,235) .. controls (419,235) and (419,234) ..
+            (419,234) .. controls (419,233) and (420,232) ..
+            (421,232) .. controls (422,231) and (423,231) ..
+            (424,231) .. controls (425,231) and (427,231) ..
+            (427,232) .. controls (428,234) and (428,235) ..
+            (428,237) -- (428,253) -- (437,253) --
+            (437,236) .. controls (437,232) and (436,228) ..
+            (434,226) .. controls (433,224) and (430,223) ..
+            (427,223) .. controls (425,223) and (423,224) ..
+            (421,225) .. controls (420,226) and (419,227) ..
+            (418,228) -- (418,228) -- (417,224) --
+            (410,224) .. controls (410,225) and (410,227) ..
+            (410,228) .. controls (410,230) and (410,231) ..
+            (410,233) -- cycle;
+        \protect\end{scope}%
+      \protect\end{scope}%
+    \protect\end{tikzpicture}}%
+  ~}
+\renewcommand*{\twittersocialsymbol} {%
+  \protect\raisebox{0em}{%
+    \protect\begin{tikzpicture}[x=0.08em, y=0.08em, xscale=0.005, yscale=-0.005, inner sep=0pt, outer sep=0pt]
+      \protect\path[fill=color2]
+        (2000, 192) .. controls (1926, 225) and (1847, 247) ..
+        (1764, 257) .. controls (1849, 206) and (1914, 126) ..
+        (1945,  30) .. controls (1865,  77) and (1778, 111) ..
+        (1684, 130) .. controls (1609,  50) and (1503,   0) ..
+        (1385,   0) .. controls (1158,   0) and ( 974, 184) ..
+        ( 974, 410) .. controls ( 974, 442) and ( 978, 474) ..
+        ( 985, 504) .. controls ( 644, 487) and ( 342, 323) ..
+        ( 139,  75) .. controls ( 104, 136) and (  84, 206) ..
+        (  84, 281) .. controls (  84, 424) and ( 156, 549) ..
+        ( 266, 623) .. controls ( 199, 621) and ( 136, 602) ..
+        (  80, 572) .. controls (  80, 573) and (  80, 575) ..
+        (  80, 577) .. controls (  80, 776) and ( 222, 941) ..
+        ( 409, 979) .. controls ( 375, 988) and ( 339, 993) ..
+        ( 301, 993) .. controls ( 275, 993) and ( 249, 991) ..
+        ( 224, 986) .. controls ( 276,1149) and ( 428,1268) ..
+        ( 607,1271) .. controls ( 467,1381) and ( 290,1447) ..
+        (  98,1447) .. controls (  65,1447) and (  32,1445) ..
+        (   0,1441) .. controls ( 182,1557) and ( 397,1625) ..
+        ( 629,1625) .. controls (1384,1625) and (1796,1000) ..
+        (1796, 458) .. controls (1796, 440) and (1796, 422) ..
+        (1795, 405) .. controls (1875, 347) and (1945, 275) ..
+        (2000, 192);
+    \protect\end{tikzpicture}}%
+  ~}
+\renewcommand*{\githubsocialsymbol}  {%
+  \protect\raisebox{-0.15em}{%
+    \protect\begin{tikzpicture}[y=0.20pt,x=0.20pt,yscale=-1, inner sep=0pt, outer sep=0pt]
+  \protect\path[fill=color2] (31.9981,12.1407) .. controls
+  (20.7556,12.1407) and (11.6381,21.2570) .. (11.6381,32.5032) .. controls
+  (11.6381,41.4982) and (17.4719,49.1307) .. (25.5631,51.8245) .. controls
+  (26.5819,52.0107) and (26.9531,51.3820) .. (26.9531,50.8420) .. controls
+  (26.9531,50.3582) and (26.9356,49.0782) .. (26.9256,47.3795) .. controls
+  (21.2619,48.6095) and (20.0669,44.6495) .. (20.0669,44.6495) .. controls
+  (19.1406,42.2970) and (17.8056,41.6707) .. (17.8056,41.6707) .. controls
+  (15.9569,40.4082) and (17.9456,40.4332) .. (17.9456,40.4332) .. controls
+  (19.9894,40.5770) and (21.0644,42.5320) .. (21.0644,42.5320) .. controls
+  (22.8806,45.6432) and (25.8306,44.7445) .. (26.9906,44.2232) .. controls
+  (27.1756,42.9082) and (27.7019,42.0107) .. (28.2831,41.5020) .. controls
+  (23.7619,40.9870) and (19.0081,39.2407) .. (19.0081,31.4382) .. controls
+  (19.0081,29.2145) and (19.8019,27.3982) .. (21.1044,25.9745) .. controls
+  (20.8944,25.4595) and (20.1956,23.3895) .. (21.3044,20.5857) .. controls
+  (21.3044,20.5857) and (23.0131,20.0382) .. (26.9031,22.6720) .. controls
+  (28.5269,22.2207) and (30.2694,21.9957) .. (32.0006,21.9870) .. controls
+  (33.7306,21.9957) and (35.4719,22.2207) .. (37.0981,22.6720) .. controls
+  (40.9856,20.0382) and (42.6919,20.5857) .. (42.6919,20.5857) .. controls
+  (43.8031,23.3895) and (43.1044,25.4595) .. (42.8956,25.9745) .. controls
+  (44.2006,27.3982) and (44.9881,29.2145) .. (44.9881,31.4382) .. controls
+  (44.9881,39.2607) and (40.2269,40.9820) .. (35.6919,41.4857) .. controls
+  (36.4219,42.1145) and (37.0731,43.3570) .. (37.0731,45.2570) .. controls
+  (37.0731,47.9782) and (37.0481,50.1745) .. (37.0481,50.8420) .. controls
+  (37.0481,51.3870) and (37.4156,52.0207) .. (38.4481,51.8220) .. controls
+  (46.5331,49.1232) and (52.3619,41.4970) .. (52.3619,32.5032) .. controls
+  (52.3619,21.2570) and (43.2444,12.1407) .. (31.9981,12.1407);
+
+\protect\end{tikzpicture}}
+  ~}
+
+
+\endinput
+
+
+%% end of file `moderncviconsmarvosym.sty'.
