@@ -1,0 +1,133 @@
+%% start of file `template.tex'.
+%% Copyright 2006-2013 Xavier Danaux (xdanaux@gmail.com).
+%
+% This work may be distributed and/or modified under the
+% conditions of the LaTeX Project Public License version 1.3c,
+% available at http://www.latex-project.org/lppl/.
+
+
+\documentclass[11pt,letterpaper,sans]{moderncv}        % possible options include font size ('10pt', '11pt' and '12pt'), paper size ('a4paper', 'letterpaper', 'a5paper', 'legalpaper', 'executivepaper' and 'landscape') and font family ('sans' and 'roman')
+
+% moderncv themes
+\moderncvstyle{classic}                             % style options are 'casual' (default), 'classic', 'oldstyle' and 'banking'
+\moderncvcolor{blue}                               % color options 'blue' (default), 'orange', 'green', 'red', 'purple', 'grey' and 'black'
+%\renewcommand{\familydefault}{\sfdefault}         % to set the default font; use '\sfdefault' for the default sans serif font, '\rmdefault' for the default roman one, or any tex font name
+%\nopagenumbers{}                                  % uncomment to suppress automatic page numbering for CVs longer than one page
+
+% character encoding
+%\usepackage[utf8]{inputenc}                       % if you are not using xelatex ou lualatex, replace by the encoding you are using
+%\usepackage{CJKutf8}                              % if you need to use CJK to typeset your resume in Chinese, Japanese or Korean
+
+\newcommand\cpp{C\raisebox{0.5ex}{\tiny\textbf{++}}}
+
+ \renewcommand*{\labelitemi}{\strut\textcolor{color1}{\large\rmfamily\textbullet}}
+% adjust the page margins
+\usepackage[top=.1in, bottom=.1in, left=.6in, right=.6in]{geometry}
+
+\nopagenumbers{}                             % uncomment to suppress automatic page numbering for CVs longer than one page
+%\setlength{\hintscolumnwidth}{3cm}                % if you want to change the width of the column with the dates
+%\setlength{\makecvtitlenamewidth}{10cm}           % for the 'classic' style, if you want to force the width allocated to your name and avoid line breaks. be careful though, the length is normally calculated to avoid any overlap with your personal info; use this at your own typographical risks...
+
+% personal data
+\name{Daniel}{Loman}
+%\address{726 De La Vina}{Santa Barbara Ca 93101}{}% optional, remove / comment the line if not wanted; the "postcode city" and "country" arguments can be omitted or provided empty
+\phone[fixed]{(805) 901-8781}
+\email{loman.daniel@gmail.com}                               % optional, remove / comment the line if not wanted
+\homepage{www.DanLoman.org}                         % optional, remove / comment the line if not wanted
+\social[github]{http://github.com/dloman}                              % optional, remove / comment the line if not wanted
+
+%----------------------------------------------------------------------------------
+%            content
+%----------------------------------------------------------------------------------
+\begin{document}
+%\begin{CJK*}{UTF8}{gbsn}                          % to typeset your resume in Chinese using CJK
+%-----       resume       ---------------------------------------------------------
+\makecvtitle
+
+\section{Education}
+\cventry{2012}{Computational Science}{SDSU}{San Diego, CA}{}{}  % arguments 3 to 6 can be left empty
+\cvline{}
+{
+  \begin{itemize}
+    \item \small GPA: 3.94/4.0
+  \end{itemize}
+}
+\cventry{2009--2011}{BS, Physics}{UCSB}{Santa Barbara, CA}{}{}  % arguments 3 to 6 can be left empty
+\cvline{}
+{
+  \begin{itemize}
+    \item \small GPA: 3.34/4.0
+  \end{itemize}
+}
+
+\vspace{-1mm}
+\nopagenumbers{}                             % uncomment to suppress automatic page numbering for CVs longer than one page
+\section{Work Experience}
+\cventry{2012--Present}{Software Developer - Analyst}{Toyon Research Corp}{Goleta, CA}{}{
+  \begin{itemize}
+    \item Lead developer of an experimental multithreaded sensor resource management application
+      and an event based tactical air radar simulation written in \cpp11 and wxWidgets.
+    \item Perform data manipulation and visualization using SciPy, NumPy, Matplotlib, and pandas.
+    \item Build and administer group Linux build and test servers.
+    \item Designed and built a custom Python and git based automated build and unit testing systems.
+    \item Built a unit testing web application in webPy.
+    \item Train and supervise interns.
+  \end{itemize}
+}
+
+\cventry{2011--2012}{Engineering Intern}{Aerius Photonics LLC}{Ventura, CA}{}{
+  \begin{itemize}
+	\item Experimented with vertical cavity lasers and performed necessary data analysis using
+    SciPy, NumPy, \hspace{8mm} Matplotlib, and pandas.
+    \item Manufactured, calibrated, and tested laser range finders, proximity sensors, and altimeters.
+    \item Wrote technical manuals for all manufacturing and testing processes.
+    \item Designed, built, and tested custom circuit boards using Altium for the research and development of
+		new prototype lasers.
+  \end{itemize}
+}
+
+\cventry{2010--2011}{Undergraduate Researcher}{Compact Muon Solenoid Group LHC UCSB}{Goleta, CA}{}{
+  \begin{itemize}
+    \item Performed analysis and manipulation of 100Gb+ sets.
+    \item Implemented, tested, and analyzed the performance of a neural network intended to improve the signal
+		to noise ratio in single and double lepton collisions pertinent to the search for the Higgs boson.
+  \end{itemize}
+}
+
+\cventry{2007--Present}{Lifeguard}{California State Department of Parks and Recreation}{Ventura, CA}{}{
+  \begin{itemize}
+    \item Responsible for the safety and rescue of all beachgoers at California State Beaches.
+    \item Tasked with emergency medical response services at State beaches and their surrounding areas.
+  \end{itemize}
+}
+
+\cventry{2006}{Engineering Intern}{Surface Targets Naval Airwarfare Center DOD}{Port Hueneme, CA}{}{
+  \begin{itemize}
+    \item Built and tested remote controlled Jet-Skis used for target practice by the Navy.
+    \item Assisted in the building and maintenance of larger remote controlled surface targets.
+    \item Designed and machined custom parts for the manufacture of remote controlled surface targets.
+  \end{itemize}
+}
+
+\section{Technical Experience}
+\cvline{\textbf{Languages}}{ \cpp , Python, C, Matlab, Java, MPI, CUDA, OpenMP}
+\cvline{\textbf{Technologies}}{Android, Cython, Numpy, pandas, Scipy, webPy, pyGame, wxWidgets, Git, Vim, Gdb, Valgrind, Autotools, \LaTeX, Altium, Kicad, Eclipse, Linux, Windows, OSX}
+
+\section{Personal Projects and Experience}
+\cvline{\textbf{Awards}\\ \vspace{1.8mm}\textbf{Projects}}{
+  \vspace{-3.5mm}
+  \begin{itemize}
+    \item Winner in the Most Followed category of the
+\href{http://hackaday.io/project/548-Sonic-Screw-Driver-Door-Lock}{\textcolor{color2}{\textbf{Hackaday Sci-Fi Contest}}}
+    \item  Wrote Android applications for wireless control of an LED lighting system and
+      custom password management.
+    \item Designed and constructed an adjustable height desk using an arduino and linear actuators.
+    \item Details for these and additional electronics/software projects avaiable at
+	    \href{http://danloman.org}{\textcolor{color2}{\textbf{Project Blog}}} and
+      \href{http://github.com/dloman}{\textcolor{color2}{\textbf{Github Profile}}}
+    \end{itemize}}
+
+\end{document}
+
+
+%% end of file `template.tex'.

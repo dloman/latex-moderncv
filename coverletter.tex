@@ -1,0 +1,71 @@
+%% start of file `template.tex'.
+%% Copyright 2006-2013 Xavier Danaux (xdanaux@gmail.com).
+%
+% This work may be distributed and/or modified under the
+% conditions of the LaTeX Project Public License version 1.3c,
+% available at http://www.latex-project.org/lppl/.
+
+
+\documentclass[11pt,letterpaper,sans]{moderncv}        % possible options include font size ('10pt', '11pt' and '12pt'), paper size ('a4paper', 'letterpaper', 'a5paper', 'legalpaper', 'executivepaper' and 'landscape') and font family ('sans' and 'roman')
+
+% moderncv themes
+\moderncvstyle{classic}                             % style options are 'casual' (default), 'classic', 'oldstyle' and 'banking'
+\moderncvcolor{blue}                               % color options 'blue' (default), 'orange', 'green', 'red', 'purple', 'grey' and 'black'
+%\renewcommand{\familydefault}{\sfdefault}         % to set the default font; use '\sfdefault' for the default sans serif font, '\rmdefault' for the default roman one, or any tex font name
+%\nopagenumbers{}                                  % uncomment to suppress automatic page numbering for CVs longer than one page
+
+% character encoding
+%\usepackage[utf8]{inputenc}                       % if you are not using xelatex ou lualatex, replace by the encoding you are using
+
+\newcommand\cpp{C\raisebox{0.5ex}{\tiny\textbf{++}}}
+
+ \renewcommand*{\labelitemi}{\strut\textcolor{color1}{\large\rmfamily\textbullet}}
+% adjust the page margins
+\usepackage[top=.1in, bottom=.1in, left=.6in, right=.6in]{geometry}
+\usepackage{graphicx}
+
+\nopagenumbers{}
+%\setlength{\hintscolumnwidth}{3cm}                % if you want to change the width of the column with the dates
+%\setlength{\makecvtitlenamewidth}{10cm}           % for the 'classic' style, if you want to force the width allocated to your name and avoid line breaks. be careful though, the length is normally calculated to avoid any overlap with your personal info; use this at your own typographical risks...
+
+% personal data
+\name{Daniel}{Loman}
+%\address{726 De La Vina}{Santa Barbara Ca 93101}{}% optional, remove / comment the line if not wanted; the "postcode city" and "country" arguments can be omitted or provided empty
+\phone[fixed]{(805) 901-8781}
+\email{loman.daniel@gmail.com}                               % optional, remove / comment the line if not wanted
+\homepage{www.DanLoman.org}                         % optional, remove / comment the line if not wanted
+\social[github]{http://github.com/dloman}                              % optional, remove / comment the line if not wanted
+
+%----------------------------------------------------------------------------------
+%            content
+%----------------------------------------------------------------------------------
+\begin{document}
+%-----       letter       ---------------------------------------------------------
+% recipient data
+\recipient{Homejoy Hiring Manager}{235 Montgomery St., Suite 320 \\ San Francisco}
+\date{July 12, 2014}
+\opening{Dear Sir or Madam,}
+\closing{Sincerely,}
+\enclosure[Attached]{curriculum vit\ae{}}          % use an optional argument to use a string other than "Enclosure", or redefine \enclname
+\makelettertitle
+
+I am inquiring about employment for the Data Scientist position you advertised on Hacker News.
+
+I currently am employed by a small research company in Santa Barbara
+named Toyon Research Corporation as an Analyst/Software Engineer.
+During my employment there I have been developing experimental resource management and simulation applications in \cpp.
+In support of these applications, I have also done extensive analysis in \cpp \space and Python.
+In addition to my \cpp \space development and analysis, I designed and developed
+an automated build and testing system in Python and webPy.
+I believe that my previous experience will strongly relate to the work
+Homejoy is doing in planning the logistics of matching cleaners to homes needing cleaning.
+Constantly learning and pushing my knowledge of new technical skills is important to me,
+and it looks like this position and working with the Homejoy team would allow me to do just that.
+I feel that the combination of my skills and my desire and ability to quickly learn new skills
+could make me be a valuable asset to your team and help you change the home cleaning industry.
+
+I look forward to discussing my qualifications further and can be reached by email at
+\href{loman.daniel@gmail.com}{\textcolor{color2}{loman.daniel@gmail.com}}.
+
+\makeletterclosing
+\end{document}
