@@ -49,6 +49,9 @@
 \DeclareOption{10pt}{\renewcommand\@ptsize{0}}
 \DeclareOption{11pt}{\renewcommand\@ptsize{1}}
 \DeclareOption{12pt}{\renewcommand\@ptsize{2}}
+\DeclareOption{14pt}{\renewcommand\@ptsize{3}}
+\DeclareOption{17pt}{\renewcommand\@ptsize{4}}
+\DeclareOption{19pt}{\renewcommand\@ptsize{5}}
 
 % font type options
 \DeclareOption{sans}{\AtBeginDocument{\renewcommand{\familydefault}{\sfdefault}}}
@@ -314,7 +317,7 @@
 % usage: \moderncvstyle{<style variant name>}
 \newcommand*{\moderncvstyle}[1]{
   \RequirePackage{moderncvstyle#1}}
-  
+
 % loads a color scheme
 % usage: \moderncvcolor{<color scheme name>}
 \newcommand*{\moderncvcolor}[1]{
