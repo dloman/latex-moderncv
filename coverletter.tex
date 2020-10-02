@@ -18,6 +18,13 @@
 %\usepackage[utf8]{inputenc}                       % if you are not using xelatex ou lualatex, replace by the encoding you are using
 
 \newcommand\cpp{C\raisebox{0.5ex}{\tiny\textbf{++}}}
+\newcommand{\CompanyName}{Dropbox}
+\newcommand{\PersonName}{}
+\newcommand{\Location}{Mountain View, CA, United States}
+\newcommand{\JobTitle}{Desktop UI Platform}
+\newcommand{\PostingLocation}{your website}
+\newcommand{\Mission}{to bring better productivity tools to the world}
+\newcommand{\LongerMission}{helping to build tooling and infrastructure for a smarter workspace}
 
  \renewcommand*{\labelitemi}{\strut\textcolor{color1}{\large\rmfamily\textbullet}}
 % adjust the page margins
@@ -42,26 +49,27 @@
 \begin{document}
 %-----       letter       ---------------------------------------------------------
 % recipient data
-\recipient{Daniel Kan}{548 Market St Suite 40873, \\ San Francisco}
-\date{July 12, 2014}
-\opening{Dear Sir or Madam,}
+\recipient{\CompanyName}{\Location}
+\date{\today}
+\opening{To whom it may concern,}
 \closing{Sincerely,}
 \enclosure[Attached]{curriculum vit\ae{}}          % use an optional argument to use a string other than "Enclosure", or redefine \enclname
 \makelettertitle
 
-I am inquiring about employment for the Software Engineer position you advertised on Hacker News.
+I am inquiring about the currently available \JobTitle \space position posted on \PostingLocation.
 
-I currently am employed by a small research company in Santa Barbara
-named Toyon Research Corporation as an Analyst/Software Engineer.
-During my employment there I have been developing development and build system for a stereo vision ROS node as well as experimental resource management and simulation applications in \cpp.
-In support of these applications, I have also done extensive analysis in \cpp \space and Python.
-I believe that my previous experience will strongly relate to the work Cruise is doing in bring self driving cars to the world.
-Constantly learning and pushing my knowledge of new technical skills is important to me,
-and it looks like this position and working with the Cruise team would allow me to do just that.
-I feel that the combination of my skills and my desire and ability to quickly learn new skills
-could make me be a valuable asset to your team and help you change the change the automotive industry.
+I currently am an Analyst/Algorithm Developer at Toyon Research Corporation in Goleta. My previous experience
+strongly relates to the work \CompanyName is doing \Mission. I am the lead developer on
+a research platform for embedded GPS denied indoor/outdoor navigation. In addition to my current role, I previously led
+development efforts for UAV mission planning, routing, and control. In support of these applications, I perform
+extensive image and signal processing work in \cpp, Python, and Matlab, as well as build and maintain high reliability web and desktop GUI applications and infrastructure.
 
-I look forward to discussing my qualifications further and can be reached by email at
+Constantly learning and pushing my
+technical knowledge and abilities is important to me, and working with the \CompanyName \space team would allow me to do just
+that. The combination of my current skills and my desire and ability to quickly learn new skills will allow me to
+become a valuable asset to your team while \LongerMission.
+
+I look forward to discussing this opportunity further and can be reached by email at
 \href{loman.daniel@gmail.com}{\textcolor{color2}{loman.daniel@gmail.com}}.
 
 \makeletterclosing
